@@ -22,8 +22,9 @@
   <!-- some code omitted -->
 </activity>
   <!-- code omitted -->
-</application>
+   
   <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+</application>
 </manifest>
