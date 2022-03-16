@@ -1,5 +1,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.nano.flutter.nano_healthkit_plugin">
+ <application
+  android:name="${applicationName}"
+  >
+   <activity android:name=".MainActivity"
+  android:theme="@style/LaunchTheme"
+  // some code omitted
+  >
+  <!-- Specify that the launch screen should continue being displayed -->
+  <!-- until Flutter renders its first frame. -->
+  <meta-data
+    android:name="io.flutter.embedding.android.SplashScreenDrawable"
+    android:resource="@drawable/launch_background" />
+
+  <!-- Theme to apply as soon as Flutter begins rendering frames -->
+  <meta-data
+    android:name="io.flutter.embedding.android.NormalTheme"
+    android:resource="@style/NormalTheme"
+    />
+
+  <!-- some code omitted -->
+</activity>
+  <!-- code omitted -->
+</application>
   <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
